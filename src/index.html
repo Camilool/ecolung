@@ -1,17 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Design landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Ecolung </title>
+
+    <link rel="stylesheet" href="./assets/css/stuylesimg.css">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Design main styles -->
+    <link rel="stylesheet" href="assets/css/creative-design.css">
+
+
+
 </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navbar -->
+    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong class="text-primary">Eco</strong> <span class="text-dark">Lung</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#producto">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#funcionalidades">Funcionalidades</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#comparativa">Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ml-md-4">
+                        <a class="nav-link btn btn-primary" href="juego.html" >Juego</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+<!-- Page Header -->
+<header id="home" class="header" style="position: relative; width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; height: 800px;">
+    <div class="header-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <video id="header-video" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+            <source src="./assets/video/video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: flex-start; align-items: center; flex-direction: column; padding-top: 50px;">
+            <div class="header-content" style="position: relative; z-index: 2; text-align: center;">
+                <h2 style="color: #fff; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">El dispositivo que te permite respirar libremente</h2>
+                <h6 style="color: #fff; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">EcoLung</h6>
+                <a href="compra.html" class="btn btn-outline-light" style="font-size: 18px; border-radius: 15px; padding: 10px 20px; border: 2px solid #fff; background-color: #0f0f0f; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); transition: background-color 0.3s, color 0.3s;">Compra el tuyo ahora</a>
+            </div>
+        </div>
+    </div>
+</header><!-- End of Page Header -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('header-video');
+    video.play();
+});
+</script>
+
+
+    <section id="about">
+        <!-- Container -->
+        <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+            <!-- About wrapper -->
+            <div class="about-wrapper">
+                <div class="after"><h1 style="text-align: center;">Nosotros</h1></div>
+                <div class="content">
+                    <h5 class="title mb-3" style="text-align: center;">Bienvenidos a EcoLung.</h5>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col">
+                            <p><b>Nuestra misión.</b></p>
+                            <p>En EcoLung, estamos dedicados a mejorar la calidad del aire que respiramos. Nuestra misión es desarrollar soluciones innovadoras y sostenibles que combatan la contaminación del aire, promoviendo un entorno más limpio y saludable para todos. Con nuestro producto estrella, EcoLung, llevamos la tecnología de purificación del aire a nuevos niveles, asegurando que cada respiración cuente.</p>
+                            <img src="assets/imgs/img-4.jpg" class="w-100" alt="Sobre nosotros" style="border: 2px solid #000; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                        </div>
+                        <div class="col">
+                            <p><b>Nuestra visión</b></p>
+                            <p>Nuestra visión es un mundo donde cada persona pueda disfrutar de aire puro y saludable, independientemente de dónde se encuentre. Aspiramos a ser líderes en la industria de la purificación del aire, estableciendo estándares de excelencia y sostenibilidad que otros sigan.</p>
+                            <p><b>¿Cómo Surgió EcoLung?</b></p>
+                            <p>La idea de EcoLung nació de la necesidad urgente de combatir la creciente contaminación del aire en las ciudades. Un equipo de científicos y ambientalistas apasionados se unió con el objetivo común de crear un dispositivo que no solo fuera efectivo, sino también sostenible y accesible para todos. Así, después de muchos años de investigación y desarrollo, EcoLung se convirtió en una realidad.</p>
+                            <p><b>Desarrollo de EcoLung.</b></p>
+                            <p>El desarrollo de EcoLung tomó aproximadamente 5 años de trabajo intenso. Durante este tiempo, se llevaron a cabo numerosas pruebas y mejoras para asegurarse de que el producto no solo cumpliera con los estándares de calidad más altos, sino que también fuera fácil de usar y accesible para el público.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="producto">
+
+        <div class="gallery-container">
+            <div class="gallery">
+              <span style="--i: 1"
+                ><img
+                  src="./assets/imgs/img-1.jpg"
+                  alt="Image 1"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 2"
+                ><img
+                  src="./assets/imgs/img-2.jpg"
+                  alt="Image 2"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 3"
+                ><img
+                  src="./assets/imgs/img-3.jpg"
+                  alt="Image 3"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 4"
+                ><img
+                  src="./assets/imgs/img-4.jpg"
+                  alt="Image 4"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 5"
+                ><img
+                  src="./assets/imgs/img-5.jpg"
+                  alt="Image 5"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 6"
+                ><img
+                  src="./assets/imgs/img-6.jpg"
+                  alt="Image 6"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 7"
+                ><img
+                  src="./assets/imgs/img-7.jpg"
+                  alt="Image 7"
+                  onclick="openModal(this.src)"
+              /></span>
+              <span style="--i: 8"
+                ><img
+                  src="./assets/imgs/img-8.jpg"
+                  alt="Image 8"
+                  onclick="openModal(this.src)"
+              /></span>
+            </div>
+          </div>
+      
+          <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg" />
+          </div>
+      
+          <audio id="background-music" loop>
+            <source
+              src="assets/audio/audio_3.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+    </section>
+      
+      <script src="./assets/js/img.js"></script>
+
+    <!-- Section: Features -->
+    <section id="features">
+        <!-- Container -->
+        <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    <h6 class="title mb-3" style="text-align: center;">Características.</h6>
+                    <p>- Tecnología de Nanofiltración: Nuestro avanzado sistema de filtración elimina partículas tan pequeñas como 0.01 micrones, asegurando que incluso los contaminantes más diminutos no lleguen a tus pulmones.</p>
+                    <p>- Energía Solar: Equipado con paneles solares integrados, EcoLung se carga utilizando energía renovable, haciendo que su uso sea tanto ecológico como económico.</p>
+                    <p>- Conectividad Inteligente: A través de nuestra aplicación móvil, puedes monitorear la calidad del aire en tiempo real, controlar el dispositivo y recibir notificaciones sobre el estado del filtro.</p>
+                    <p>- Autonomía Prolongada: Con una sola carga, EcoLung puede funcionar hasta 12 horas de forma continua, asegurando aire limpio durante todo el día.</p>
+                    <p>- Portabilidad: Diseñado para ser compacto y ligero, puedes llevar EcoLung contigo a cualquier lugar. Es perfecto para viajes, oficinas, hogares y cualquier espacio donde desees mejorar la calidad del aire.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <!-- Quitar cualquier estilo residual de caja amarilla -->
+                        <img src="assets/imgs/img-2.jpg" class="w-100" alt="About Us" style="border: 2px solid #000; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                    </div>
+                </div>
+            </div><!-- End of Row -->
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
+
+        <!-- Modal -->
+        
+<!-- Section: Video -->
+<section id="video">
+    <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 20px rgba(248, 244, 0, 0.8);">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9" style="border: 2px solid #000; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5); width: 100%;">
+                    <video controls style="border-radius: 10px; width: 100%; height: auto;">
+                        <source src="./assets/video/ECOLUNG.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End of Video Section -->
+
+    <!-- Section -->
+<!-- Section -->
+<section id="funcionalidades">
+    <!-- Container -->
+    <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.8);">
+        <!-- Row -->
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+                <div class="img-wrapper">
+                    <div class="after"></div>
+                    <img src="assets/imgs/img-3.jpg" class="w-100" alt="About us" style="border: 2px solid #000; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h6 class="title mb-3" style="text-align: center;">Funcionalidades.</h6>
+                <p>- Purificación Integral: Capaz de purificar el aire tanto en interiores como en exteriores, eliminando polvo, humo, gases, bacterias y otros contaminantes.</p>
+                <p>- Mejora del Aire Urbano: Especialmente útil en áreas urbanas con altos niveles de contaminación, EcoLung mejora significativamente la calidad del aire.</p>
+                <p>- Asistencia Respiratoria: Ideal para personas con problemas respiratorios como asma y alergias, proporcionando un ambiente más saludable.</p>
+                <p>- Integración con Sistemas de Climatización: Compatible con sistemas de climatización existentes para una purificación de aire más eficiente.</p>
+            </div>
+        </div><!-- End of Row -->
+    </div><!-- End of Container-->
+</section><!-- End of Section -->
+
+
+    <!-- Testmonial Section -->
+<section id="comparativa" class="text-center pt-5">
+    <!-- Container -->
+    <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.8);">
+        <h2 style="text-align: center; margin-bottom: 20px;">Comparativa de EcoLung con Competidores</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: #e0e0e0; color: #000;">
+                <th style="padding: 10px; border: 1px solid #ccc;">Característica</th>
+                <th style="padding: 10px; border: 1px solid #ccc;">EcoLung</th>
+                <th style="padding: 10px; border: 1px solid #ccc;">Xiaomi Mi Air Purifier 3H</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;">Tecnología de Filtración</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Nanofiltración y Energía Solar</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">HEPA True, Carbón Activado</td>
+            </tr>
+            <tr style="background: #f5f5f5;">
+                <td style="padding: 10px; border: 1px solid #ccc;">Caudal de Aire Limpio</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">380 m³/h</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">380 m³/h</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;">Fuente de Energía</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Solar</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Electricidad</td>
+            </tr>
+            <tr style="background: #f5f5f5;">
+                <td style="padding: 10px; border: 1px solid #ccc;">Portabilidad</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Alta</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Media</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;">Conectividad</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Aplicación Móvil</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Control por App</td>
+            </tr>
+            <tr style="background: #f5f5f5;">
+                <td style="padding: 10px; border: 1px solid #ccc;">Nivel de Ruido</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Silencioso</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">32 dB</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;">Diseño</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Compacto y Ecológico</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Compacto</td>
+            </tr>
+            <tr style="background: #f5f5f5;">
+                <td style="padding: 10px; border: 1px solid #ccc;">Precio</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Moderado</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Competitivo</td>
+            </tr>
+        </table>
+    </div>
+    
+</section><!-- End of Testmonial Section -->
+
+
+    <!-- Section -->
+    <section class="has-bg-img text-center text-light height-auto" style="background-image: url(assets/imgs/bg-img-2.jpg)">
+        <h1 class="display-4">¡GRACIAS POR PREFERIRNOS!</h1>
+    </section><!-- End of Section -->
+    
+
+    <!-- Contact Section -->
+<section id="contact" class="text-center pt-5">
+    <!-- container -->
+    <div class="container" style="background: linear-gradient(to bottom right, #b3b3b3, #e0e0e0); color: #000; border: 2px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.8);">
+        <h1 style="text-align: center; margin-bottom: 20px;">Contáctenos</h1>
+        <p class="mb-5">Si tiene algunas preguntas o necesita ayuda. ¡Por favor contáctenos!</p>
+        
+        <!-- Contact form -->
+        <form class="contact-form col-md-11 col-lg-9 mx-auto">
+            <div class="form-row">
+                <div class="col form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" style="border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+                <div class="col form-group">
+                    <input type="email" class="form-control" placeholder="Correo" style="border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Tu mensaje" style="border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-block" value="Enviar mensaje">
+            </div>
+        </form><!-- End of Contact form -->
+    </div><!-- End of Container-->      
+</section><!-- End of Contact Section -->
+
+
+    <!-- Section -->
+    <section class="pb-0">
+        <!-- Container -->
+        <div class="container">
+            <!-- Pre footer -->
+            <div class="pre-footer">
+                
+
+                <ul class="list">
+                    <li class="list-head">
+                        <h6 class="font-weight-bold">INFORMACIÓN DE CONTACTO</h6>
+                    </li>
+                    <li class="list-body">
+                        <p>Contáctanos y nos comunicaremos contigo dentro de 24 horas.</p>
+                        <p><i class="ti-location-pin"></i> Medellin-Antioquia</p>
+                        <p><i class="ti-email"></i>  ecolung@website.com</p>
+                        <div class="social-links">
+                            
+                            <a href="https://www.facebook.com/?locale=es_LA" class="link"><i class="ti-facebook"></i></a>
+                            <a href="https://x.com/?lang=es" class="link"><i class="ti-twitter-alt"></i></a>
+                            <a href="https://www.instagram.com/" class="link"><i class="ti-instagram"></i></a>
+                            
+                        </div>
+                    </li>
+                </ul> 
+            </div><!-- End of Pre footer -->            
+
+            <!-- foooter -->
+            <footer class="footer">            
+                <p>&copy; Ecolung - Todos los Derechos Reservados <script>document.write(new Date().getFullYear())</script> <br>  Estefany Soto Quintero <br>Camilo Cáceres Lobo <br> 2996760</p>
+            </footer><!-- End of Footer-->  
+            
+        </div><!--End of Container -->      
+    </section><!-- End of Section -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Design js -->
+    <script src="assets/js/creative-design.js"></script>
+
+    <script src="/creative-design/public_html/assets/js/img.js"></script>
+
+</body>
 </html>
