@@ -1,0 +1,83 @@
+/* compra-styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #f2e9e9;
+}
+
+header {
+    background: linear-gradient(to bottom right, #8e0808, #3c3c3c);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(95, 3, 3, 0.8);
+    border: 1px solid #7b0303;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.purchase-form {
+    margin-top: 20px;
+}
+
+.purchase-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-form label {
+    margin-top: 10px;
+}
+
+.purchase-form input,
+.purchase-form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #830606;
+}
+
+.purchase-form input:focus,
+.purchase-form button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+.purchase-form .buy-button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+.purchase-form .buy-button:hover {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+.btn-outline-light{
+    background-color: #0056b3;
+}
